@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Structure</title>
+    <link rel="shortcut icon" href="avatar.jpg" type="image/x-icon" />
+    <script src="scr.js" defer></script>
+    <script src="act.js" async></script>
+  </head>
+  <body>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <ul class="nav" style="position: fixed">
+      <li class="dp5">Дозиметр ДП-5В</li>
+      <li class="nav2">
+        <a href="Main.htm" class="menu-item">Главная</a>
+      </li>
+      <li>
+        <a href="Theory.htm" class="menu-item">Теоретические сведения</a>
+      </li>
+      <li>
+        <a href="Structure.htm" class="menu-item">Структура установки</a>
+      </li>
+      <li>
+        <a href="Simulation.htm" class="menu-item">Симулятор установки</a>
+      </li>
+      <li>
+        <a href="Author.htm" class="menu-item">Автор</a>
+      </li>
+    </ul>
+    <br /><br /><br /><br /><br />
+        <div align="center">
+          <img width="600px"
+            src="DP.png"
+            onmouseover="this.width=this.width*1.2"
+            onmouseout="this.width=this.width/1.2"
+          />
+          <div align="center">
+            <img width="600px"
+              src="dp5v.png"
+              onmouseover="this.width=this.width*1.2"
+              onmouseout="this.width=this.width/1.2"
+            />
+            <div align="center" style="padding: 5px;">
+              <p>
+                1 - измерительный пульт;
+                2 - соединительный кабель;
+                3 - кнопка сброса показаний;
+                4 - переключатель поддиапазонов;
+                5 - микроамперметр;
+                6 - крышка футляра прибора;
+                7 - таблица допустимых значений заражения объектов;
+                8 - блок детектирования;
+                9 - контрольный источник;
+                10 - поворотный экран;
+                11 - тумблер подсвета шкалы микроамперметра;
+                12 - удлинительная штанга;
+                13 - головные телефоны; 
+                14 - футляр;<br />
+              </p>
+            <div align="center">
+            <object data="Карта_установки_HTML5.htm" width="550" height="400"></object>
+            </div>
+            <div align="left" style="margin-left: 200px;"><p>ПОРЯДОК ВЫПОЛНЕНИЯ РАБОТЫ</p>
+            <p>
+              — подключить источники питания, закрыть крышку отсе­ка источников питания;</br>
+
+              — подключить к прибору и закрепить на голове головные телефоны;</br>
+
+              — включить прибор, для чего переключатель поддиапазонов поставить в положение «O», плавно вращая ручку «O» по часовой стрелке, установить стрелку измери­тельного прибора на черный треугольник шкалы;</br>
+
+              — включить для проверки электропитания освещение;</br>
+
+              — переключаем у блока детектирования поворотом экрана на режим «К», если он не установлен на другом;</br>
+
+              — поочередно, устанавливая ручку переключателя поддиапазонов в положение х 1000, х 100, х 10, х 01, с по­мощью головных телефонов и отклонений стрелки измери­тельного прибора проверить работоспособность прибора;</br>
+
+              — присоединяем наш блок детектирования к штативу;</br>
+
+              — переключаем у блока детектирования поворотом экрана с режима «К» в режим «Г» или «Б», смотря какую радиацию измерять;</br>
+
+              — подводим к цилиндрам для измерения радиации;</br>
+
+              — разобрать и положить обратно составные части установки.</br>
+            </p>
+            </div>
+            </div>
+            <div align="center">
+            <object data="Video_HTML5 Canvas.html" width="550" height="400"></object>
+          </div>
+          <div id="dialog_window">
+            <div class="toggler">
+              <h3 class="toggler_text">&lt;</h3>
+              <h3 class="toggler_text">&lt;</h3>
+              <h3 class="toggler_text">&lt;</h3>
+            </div>
+            <div id="modal_container">
+              <h4 class="label">Задайте ваш вопрос!</h4>
+              <h4 class="header">История:</h4>
+              <div class="history" id="history_container"></div>
+              <div id="input_field">
+                <input
+                  type="text"
+                  name=""
+                  id="input_text"
+                  placeholder="Задайте вопрос"
+                />
+                <button id="input_button">Отправить</button>
+                <button id="input_button_micro">&#127908;</button>
+              </div>
+            </div>
+            <div class="toggler">
+              <h3 class="toggler_text">></h3>
+              <h3 class="toggler_text">></h3>
+              <h3 class="toggler_text">></h3>
+            </div>
+    </div>
+  </body>
+</html>

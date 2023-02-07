@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simulation</title>
+    <link rel="shortcut icon" href="avatar.jpg" type="image/x-icon" />
+    <script src="scr.js" defer></script>
+    <script src="act.js" async></script>
+  </head>
+  <body>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <ul class="nav" style="position: fixed">
+      <li class="dp5">Дозиметр ДП-5В</li>
+      <li class="nav2">
+        <a href="Main.htm" class="menu-item">Главная</a>
+      </li>
+      <li>
+        <a href="Theory.htm" class="menu-item">Теоретические сведения</a>
+      </li>
+      <li>
+        <a href="Structure.htm" class="menu-item">Структура установки</a>
+      </li>
+      <li>
+        <a href="Simulation.htm" class="menu-item">Симулятор установки</a>
+      </li>
+      <li>
+        <a href="Author.htm" class="menu-item">Автор</a>
+      </li>
+    </ul>
+    <object
+      style="margin-left: 400px; margin-top: 250px"
+      data="index.html"
+      width="705"
+      height="350"
+    ></object>
+    <div id="dialog_window">
+      <div class="toggler">
+        <h3 class="toggler_text">&lt;</h3>
+        <h3 class="toggler_text">&lt;</h3>
+        <h3 class="toggler_text">&lt;</h3>
+      </div>
+      <div id="modal_container">
+        <h4 class="label">Задайте ваш вопрос!</h4>
+        <h4 class="header">История:</h4>
+        <div class="history" id="history_container"></div>
+        <div id="input_field">
+          <input
+            type="text"
+            name=""
+            id="input_text"
+            placeholder="Задайте вопрос"
+          />
+          <button id="input_button">Отправить</button>
+          <button id="input_button_micro">&#127908;</button>
+        </div>
+      </div>
+      <div class="toggler">
+        <h3 class="toggler_text">></h3>
+        <h3 class="toggler_text">></h3>
+        <h3 class="toggler_text">></h3>
+      </div>
+  </body>
+</html>

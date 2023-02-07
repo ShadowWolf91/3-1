@@ -1,0 +1,10 @@
+1.select * from v$archived_log;
+2.select * from v$parameters;
+3.select segment_name, segment_type, tablespace_name, count(segment_type) from dba_segments;
+4.select * from ;
+5.select * from v$pdba;
+6.select * from v$logfile;
+7.select * from ;
+8.select * from v$sgastat;
+9.select * from v$sgainfo where name = 'Granule Size';
+10.select * from v$process;

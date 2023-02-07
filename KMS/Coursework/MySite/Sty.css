@@ -1,0 +1,148 @@
+#dialog_window {
+  border-radius: 30px;
+  position: fixed;
+  top: 50%;
+  background-color: red;
+  border: 8px solid #069157;
+  height: 400px;
+  width: 400px;
+  max-width: 400px;
+  display: flex;
+  transition: 0.7s;
+}
+#modal_container {
+  width: 400px;
+}
+.toggler {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100% - 400px;
+  background-color: #171a1f;
+  border-radius: 20%;
+  cursor: pointer;
+}
+.toggler_text {
+  margin: auto;
+}
+#history_container {
+  border-radius: 10px;
+  overflow-y: scroll;
+  height: 74%;
+  background-color: #069157;
+  margin-bottom: 1%;
+}
+#input_field * {
+  color: black;
+}
+
+.question_container {
+  justify-content: flex-end;
+  display: flex;
+  text-align: center;
+  margin: 2% 0 2% 2%;
+}
+.answer_container {
+  margin: 2% 0 2% 2%;
+  width: 95%;
+}
+.question {
+  width: fit-content;
+  padding: 4%;
+  background-color: #171a1f;
+  border-radius: 20px;
+}
+.answer {
+  padding: 4%;
+  width: fit-content;
+  background-color: #3a3e45;
+  border-radius: 20px;
+}
+img {
+  width: 90%;
+}
+img:hover {
+  transform: scale(1.08);
+}
+
+#input_text {
+  width: 60%;
+  border-radius: 5px;
+  padding: 1%;
+}
+#input_button {
+  color: white;
+  background-color: #069157;
+  border-radius: 5px;
+  width: 28%;
+  padding: 1%;
+  cursor: pointer;
+}
+#input_button_micro {
+  background-color: #069157;
+  border-radius: 10px;
+  width: 8%;
+  cursor: pointer;
+}
+// animations
+.toggler :nth-child(1) {
+  animation: modal_animation_1 3s ease-in-out infinite;
+}
+.toggler :nth-child(2) {
+  animation: modal_animation_2 3s ease-in-out infinite;
+}
+.toggler :nth-child(3) {
+  animation: modal_animation_3 3s ease-in-out infinite;
+}
+@keyframes modal_animation_1 {
+  0% {
+    color: red;
+  }
+  25% {
+    color: white;
+  }
+  50% {
+    color: white;
+  }
+  75% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}
+@keyframes modal_animation_2 {
+  0% {
+    color: white;
+  }
+  25% {
+    color: orangered;
+  }
+  50% {
+    color: white;
+  }
+  75% {
+    color: white;
+  }
+}
+@keyframes modal_animation_3 {
+  0% {
+    color: white;
+  }
+  25% {
+    color: white;
+  }
+  50% {
+    color: orange;
+  }
+  75% {
+    color: white;
+  }
+}
+.label,
+.header {
+  text-align: center;
+}
